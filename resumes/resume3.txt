@@ -1,0 +1,78 @@
+Name: Rohan Mehta
+Email: rohan.mehta@example.com
+ | Phone: +91-9873214560
+LinkedIn: linkedin.com/in/rohan-mehta-dev | GitHub: github.com/rohanmehta | Address: Bengaluru, Karnataka, India
+
+Profile Summary
+
+Full Stack Developer with experience in building scalable web applications using MERN stack and Java-based solutions. Skilled in frontend design, backend development, API integration, and deployment on cloud platforms. Strong problem-solving mindset with a passion for clean, maintainable code.
+
+Skills
+
+Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Redux, Tailwind CSS, Bootstrap
+
+Backend: Node.js, Express.js, Java, Spring Boot
+
+Databases: MongoDB, MySQL, PostgreSQL
+
+Version Control & Tools: Git, GitHub, Docker, Jenkins
+
+Cloud & Deployment: AWS (EC2, S3), Heroku, Vercel
+
+Other: REST APIs, GraphQL, Agile methodology, Unit Testing (Jest, Mocha)
+
+Education
+
+B.Tech in Computer Science & Engineering
+Indian Institute of Information Technology, Bangalore
+2019 – 2023 | CGPA: 8.6/10
+
+Projects
+
+1. E-Commerce Web Application (MERN Stack)
+
+Developed a full-featured e-commerce platform with product listings, cart, and payment gateway integration.
+
+Implemented JWT authentication for secure login/signup.
+
+Deployed on AWS EC2 with Nginx reverse proxy.
+
+2. Job Portal (Java + Spring Boot + React)
+
+Built a job posting and application system for recruiters and candidates.
+
+Integrated REST APIs for profile management and job search.
+
+Used MySQL for relational data storage and React for frontend.
+
+3. Real-Time Chat Application
+
+Created a chat app with WebSocket for live messaging.
+
+Features include group chat, read receipts, and dark mode UI.
+
+Deployed on Heroku with MongoDB Atlas.
+
+Internship Experience
+
+Software Developer Intern – Wipro Digital (Jan 2022 – May 2022)
+
+Worked on developing internal dashboards using React and Node.js.
+
+Optimized backend APIs reducing response time by 25%.
+
+Collaborated with UI/UX team to improve user interface consistency.
+
+Certifications
+
+Full Stack Web Development with React – Coursera
+
+AWS Certified Cloud Practitioner – Amazon
+
+Java Programming Masterclass – Udemy
+
+Achievements
+
+Ranked Top 5 in Hackathon “CodeRush 2022” at IIIT Bangalore.
+
+Built open-source project on GitHub with 200+ stars.

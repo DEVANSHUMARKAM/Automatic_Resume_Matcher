@@ -1,0 +1,74 @@
+Name: Devanshu Markam
+Email: devanshu@example.com
+ | Phone: +91-9876543210
+LinkedIn: linkedin.com/in/devanshu-markam | GitHub/Portfolio: github.com/devanshu
+
+Profile Summary
+
+Detail-oriented final-year IT engineering student with strong skills in data analysis, SQL, Python, and visualization. Experienced in handling datasets, building dashboards, and deriving insights to support decision-making. Adept at problem solving and presenting results with clarity.
+
+Skills
+
+Programming & Data Tools: Python (Pandas, NumPy, Matplotlib, Seaborn), R, SQL
+
+Databases: MySQL, PostgreSQL
+
+Visualization: Power BI, Tableau, Excel (Pivot Tables, VLOOKUP)
+
+Data Concepts: Data cleaning, exploratory data analysis (EDA), hypothesis testing, regression, classification, clustering
+
+Other: Git, Jupyter Notebook
+
+Education
+
+B.Tech in Information Technology
+XYZ Institute of Technology, India
+2019 – 2023 | CGPA: 8.1/10
+
+Projects
+
+1. Sales Data Analysis using Python
+
+Analyzed 1M+ sales records to identify top-performing products and regions.
+
+Built visualizations using Matplotlib and Seaborn to show revenue trends.
+
+Automated data cleaning pipeline reducing preprocessing time by 40%.
+
+2. Customer Churn Prediction (Machine Learning)
+
+Used Logistic Regression and Random Forest models to predict churn with 82% accuracy.
+
+Applied feature engineering and cross-validation for model improvement.
+
+Delivered a dashboard in Tableau to help business users track churn probability.
+
+3. COVID-19 Data Visualization (Tableau)
+
+Created interactive dashboards to show infection trends, vaccination rates, and hotspots.
+
+Pulled and cleaned raw datasets from WHO API using Python.
+
+Internship Experience
+
+Data Analyst Intern – ABC Analytics Pvt. Ltd. (Jun 2022 – Aug 2022)
+
+Worked with SQL queries to extract KPIs for client projects.
+
+Automated reporting process in Excel and Power BI, reducing weekly reporting time by 30%.
+
+Presented actionable insights to senior analysts.
+
+Certifications
+
+Google Data Analytics Professional Certificate – Coursera
+
+SQL for Data Science – University of California, Coursera
+
+Power BI Desktop for Business Intelligence – Udemy
+
+Achievements
+
+Secured 1st place in college-level Data Visualization Hackathon (2022).
+
+Published analysis project on Kaggle, ranked in top 10% of notebooks.
