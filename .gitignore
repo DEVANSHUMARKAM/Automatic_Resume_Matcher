@@ -1,0 +1,14 @@
+# Python virtual environment
+venv/
+
+# The large, full resume dataset folder
+resumes/
+
+# Python cache files
+__pycache__/
+
+# The raw CSV dataset file
+*.csv
+
+# Any zip files
+*.zip
