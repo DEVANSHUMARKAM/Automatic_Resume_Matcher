@@ -22,9 +22,7 @@ def preprocess_text(text):
     stemmed_tokens = [stemmer.stem(token) for token in cleaned_tokens]
     return " ".join(stemmed_tokens)
 
-# --- This block runs only when you execute this script directly ---
 if __name__ == '__main__':
-    # --- Part 1: Indexing the Resumes (Runs once at the start) ---
     resumes_path = "resumes/"
     resume_files = [os.path.join(resumes_path, f) for f in os.listdir(resumes_path) if f.endswith('.txt')]
 
@@ -41,7 +39,6 @@ if __name__ == '__main__':
         tfidf_matrix = vectorizer.fit_transform(cleaned_resumes)
         print("Resumes have been indexed successfully.")
 
-        # --- Part 2: The Interactive Matching Loop ---
         print("\n--- Resume Matcher Activated ---")
         while True:
             # 1. Get user input for the job description
