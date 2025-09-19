@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Web Crawler - Recruitment Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        .container-wrapper { flex-grow: 1; }
+        @import url('https://rsms.me/inter/inter.css');
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    {% include 'navbar.html' %}
+
+    <div class="container-wrapper container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Job Description Web Crawler</h1>
+            <p class="text-md text-gray-600 mt-2">Enter a URL to automatically fetch job descriptions.</p>
+        </header>
+
+        <main class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="mb-4 p-4 rounded-md {{ 'bg-red-100 border-l-4 border-red-500 text-red-700' if category == 'error' else 'bg-green-100 border-l-4 border-green-500 text-green-700' }}" role="alert">
+                    <p class="font-bold">{{ category.title() }}</p>
+                    <p>{{ message }}</p>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+
+            <form action="/crawler" method="POST">
+                <div>
+                    <label for="url" class="block text-sm font-medium text-gray-700">Enter URL of a Careers Page</label>
+                    <input type="url" id="url" name="url" required class="mt-1 w-full p-2 border border-gray-300 rounded-md" placeholder="https://example.com/careers">
+                </div>
+                <div class="text-center mt-6">
+                    <button type="submit" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700">
+                        Fetch Job Descriptions
+                    </button>
+                </div>
+            </form>
+
+            <!-- Results Section -->
+            {% if jobs %}
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold text-center mb-4">Scraped Jobs ({{ jobs|length }})</h2>
+                <div class="space-y-4">
+                    {% for job in jobs %}
+                    <div class="bg-gray-50 p-4 rounded-md border">
+                        <h3 class="font-bold text-lg text-gray-800">{{ job.title }}</h3>
+                        <p class="text-sm text-gray-600 mt-2 whitespace-pre-wrap">{{ job.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </main>
+    </div>
+    
+    {% include 'footer.html' %}
+
+</body>
+</html>

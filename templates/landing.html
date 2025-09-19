@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Recruitment Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        @import url('https://rsms.me/inter/inter.css');
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900">
+                Revolutionize Your Hiring Process.
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600">
+                Leverage the power of Information Retrieval to find the perfect candidate, faster. Our Adaptive Recruitment Engine goes beyond simple keyword matching, using advanced techniques to rank, refine, and discover top talent from your resume database.
+            </p>
+            <div class="mt-8">
+                <a href="/dashboard" class="inline-block bg-blue-600 text-white font-bold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 w-full">
+            {% include 'footer.html' %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Structured Profile - Recruitment Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        .container-wrapper { flex-grow: 1; }
+        @import url('https://rsms.me/inter/inter.css');
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    {% include 'navbar.html' %}
+
+    <div class="container-wrapper container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Add New Candidate Profile</h1>
+            <p class="text-md text-gray-600 mt-2">Create a structured XML resume from candidate details.</p>
+        </header>
+
+        <main class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="mb-4 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md" role="alert">
+                  <p class="font-bold">System Message</p>
+                  {% for message in messages %}
+                    <p>{{ message }}</p>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            {% endwith %}
+
+            <form action="/add-structured" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Candidate Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="experience_years" class="block text-sm font-medium text-gray-700">Years of Experience</label>
+                        <input type="number" id="experience_years" name="experience_years" required class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <label for="skills" class="block text-sm font-medium text-gray-700">Skills (comma-separated)</label>
+                    <textarea id="skills" name="skills" rows="3" required class="mt-1 w-full p-2 border border-gray-300 rounded-md" placeholder="e.g., Python, Java, SQL, React"></textarea>
+                </div>
+                
+                <div class="mt-6">
+                    <label for="full_text" class="block text-sm font-medium text-gray-700">Full Resume Text (for keyword search)</label>
+                    <textarea id="full_text" name="full_text" rows="8" required class="mt-1 w-full p-2 border border-gray-300 rounded-md" placeholder="Paste the full, unstructured resume text here..."></textarea>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button type="submit" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700">
+                        Create and Save Profile
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+    
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Recruitment Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+        main { 
+            flex-grow: 1; 
+        }
+        @import url('https://rsms.me/inter/inter.css');
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- A placeholder for our future navbar -->
+    <header class="bg-white shadow-sm p-4 text-center">
+        <h1 class="text-xl font-semibold text-gray-800">Adaptive Recruitment Engine</h1>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Application Dashboard</h1>
+            <p class="text-md text-gray-600 mt-2">Choose a task to get started.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Search & Rank -->
+            <a href="/search" class="block p-6 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+                <h2 class="text-xl font-bold text-gray-800">Search & Rank Resumes</h2>
+                <p class="mt-2 text-gray-600">Use adaptive search to find and rank candidates based on a job description.</p>
+            </a>
+
+            <!-- Card 2: Upload Resumes -->
+            <a href="/upload" class="block p-6 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+                <h2 class="text-xl font-bold text-gray-800">Upload Resumes</h2>
+                <p class="mt-2 text-gray-600">Bulk upload existing resumes (.txt or .pdf) to expand the database.</p>
+            </a>
+
+            <!-- Card 3: Add Structured Profile -->
+            <a href="/add-structured" class="block p-6 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+                <h2 class="text-xl font-bold text-gray-800">Add Structured Profile</h2>
+                <p class="mt-2 text-gray-600">Manually add a new profile with structured data for precise filtering.</p>
+            </a>
+            
+            <!-- Card 4: JD Web Crawler -->
+            <a href="#" class="block p-6 bg-gray-200 rounded-lg shadow-lg cursor-not-allowed opacity-50">
+                <h2 class="text-xl font-bold text-gray-800">JD Web Crawler</h2>
+                <p class="mt-2 text-gray-600">(Coming Soon) Fetch job descriptions from the web.</p>
+            </a>
+        </div>
+    </main>
+    
+    {% include 'footer.html' %}
+
+</body>
+</html>
